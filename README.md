@@ -141,20 +141,20 @@ Setup
 
 Create a virtual environment
 
-python3 -m venv .venv
-source .venv/bin/activate
+	python3 -m venv .venv
+	source .venv/bin/activate
 
 Install dependencies
 
-pip install -r requirements.txt
+	pip install -r requirements.txt
 
 Create the database
 
-sqlite3 app.db < init_db.sql
+	sqlite3 app.db < init_db.sql
 
 Insert one sample case
 
-sqlite3 app.db “INSERT INTO cases VALUES (‘C1001’,‘OPEN’,1,‘TIMEOUT’,‘MEDIUM’);”
+	sqlite3 app.db “INSERT INTO cases VALUES (‘C1001’,‘OPEN’,1,‘TIMEOUT’,‘MEDIUM’);”
 
 ⸻
 
@@ -162,28 +162,28 @@ Configuration
 
 Set the OpenAI API key (optional)
 
-export OPENAI_API_KEY=“your_api_key”
+	export OPENAI_API_KEY=“your_api_key”
 
 ⸻
 
 Run the service
 
-uvicorn app.main:app –reload
-
-API documentation
-
-http://127.0.0.1:8000/docs
+	uvicorn app.main:app –reload
+	
+	API documentation
+	
+	http://127.0.0.1:8000/docs
 
 ⸻
 
 Example request
 
-POST /case-task
-
-case_id: C1001
-description: Partner API failed again with timeout, please retry for policy 4711
-channel: SYSTEM
-user_role: OPS
+	POST /case-task
+	
+	case_id: C1001
+	description: Partner API failed again with timeout, please retry for policy 4711
+	channel: SYSTEM
+	user_role: OPS
 
 ⸻
 
