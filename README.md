@@ -1,3 +1,5 @@
+Note: This is a small learning and reference project created to explore architectural boundaries when embedding AI into backend orchestration. The code intentionally prioritizes clarity of flow over production-grade structure or optimizations.
+
 AI-Assisted Case Orchestrator
 
 This project is a small reference implementation that demonstrates how an AI model can be integrated into an enterprise-style backend flow as a recommendation component, while keeping execution deterministic, auditable and safe.
