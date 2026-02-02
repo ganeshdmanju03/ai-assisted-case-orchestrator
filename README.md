@@ -22,14 +22,26 @@ The goal is to show how AI can be embedded into an integration or workflow pipel
 
 High level flow
 
-API request
-Deterministic validation
-Load case context
-AI recommendation (structured JSON only)
-Persist AI decision (idempotency)
-Deterministic guardrails
-Execute backend call or route to manual review
-Audit log
+	HTTP request
+	   ↓
+	process_case()      [main.py]
+	   ↓
+	build idempotency key
+	   ↓
+	load case from DB
+	   ↓
+	get_or_create_decision()   [orchestration.py]
+	   ↓
+	    ├── reuse decision from DB
+	    └── OR call AI → store decision
+	   ↓
+	guardrails()
+	   ↓
+	execute backend OR manual
+	   ↓
+	write audit log
+	   ↓
+	HTTP response
 
 ⸻
 
