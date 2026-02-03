@@ -55,6 +55,9 @@ This project follows three strict architectural rules:
 	3.	The final execution path is always decided by deterministic logic.
 
 ⸻
+## Detailed architecture diagram
+
+![Detailed architecture diagram](/architecture-detailed.png)
 
 What does “AI decision” mean in this project
 
