@@ -105,11 +105,11 @@ The AI model is therefore used to translate unstructured input into structured i
 What the AI does not do
 
 The AI is not allowed to:
-	•	execute backend calls
-	•	update business data
-	•	change process state
-	•	decide permissions
-	•	control the workflow
+		•	execute backend calls
+		•	update business data
+		•	change process state
+		•	decide permissions
+		•	control the workflow
 
 All execution decisions are made by deterministic code using explicit guardrails.
 
