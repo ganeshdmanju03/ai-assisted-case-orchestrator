@@ -152,10 +152,10 @@ The fallback decision is persisted using the same idempotency mechanism so that 
 
 Technology stack
 
-Python
-FastAPI
-SQLite
-OpenAI API (optional – graceful fallback is implemented)
+	Python
+	FastAPI
+	SQLite
+	OpenAI API (optional – graceful fallback is implemented)
 
 ⸻
 
@@ -223,6 +223,7 @@ Scope and limitations
 
 This project is intentionally small and focuses only on architectural boundaries between:
 
-probabilistic reasoning (AI recommendations)
-deterministic orchestration and execution
+	probabilistic reasoning (AI recommendations)
+	deterministic orchestration and execution
+	
 It is not intended to be a production-ready framework, but a reference implementation for experimenting with AI-assisted orchestration patterns.k, but a reference implementation for experimenting with AI-assisted orchestration patterns.
